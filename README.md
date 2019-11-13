@@ -47,12 +47,12 @@ for each word, the first column is the token, the second column is the character
 
 ```
 	sid:CTS20001223.1300.0809
-​	歹 297 O
-​	徒 298 O
-​	抢 300 B-Conflict:Attack
-​	得 301 O
-​	实 302 O
-​	在 303 O
+	歹 297 O
+	徒 298 O
+	抢 300 B-Conflict:Attack
+	得 301 O
+	实 302 O
+	在 303 O
 ```
 
 
@@ -69,8 +69,8 @@ Similar to character embedding but for word senses.  For example:
 
 ```
  苹果#1 0.304095 ...
-​	苹果#2 -0.175496 ...
-​	香蕉 -0.230772 ...
+ 苹果#2 -0.175496 ...
+ 香蕉 -0.230772 ...
 ```
 
 where *Word#n* means that it is the n-th sense of word A, The pretrained word senses embedding could be obtained by [SAT](https://github.com/thunlp/SE-WRL-SAT).
@@ -81,7 +81,7 @@ Records all senses for each polysemous word, corresponding to the word sense emb
 
 ```
  苹果 苹果#1 苹果#2
-​	香蕉
+ 香蕉
 ```
 
 
@@ -92,10 +92,10 @@ Recodes the answer of all triggers with location and event types for evaluations
 
 ```
  CTV20001227.1330.0447	57	2	宣判	Justice:Sentence
-​ CTV20001227.1330.0447	131	2	判处	Justice:Sentence
-​	CTV20001227.1330.0447	110	2	判处	Justice:Sentence
-​	CTV20001227.1330.0447	51	2	上诉	Justice:Appeal
-​	CTV20001227.1330.0447	288	2	上诉	Justice:Appeal
+ CTV20001227.1330.0447	131	2	判处	Justice:Sentence
+ CTV20001227.1330.0447	110	2	判处	Justice:Sentence
+ CTV20001227.1330.0447	51	2	上诉	Justice:Appeal
+ CTV20001227.1330.0447	288	2	上诉	Justice:Appeal
 ```
 
 
@@ -105,20 +105,20 @@ Recodes the answer of all triggers with location and event types for evaluations
 Arguments of the code are set in **config.py**, which contains
 
 ```
- status = 'train'														Status of the program
-​ savemodel = 'data/model/test'								Path of the saved model
-​ savedset = 'data/model/test.dset'						Path of the saved data settings
-​ TRAIN = 'trainid_BIO.txt'										Path of the training data
-​ dev = 'devid_BIO.txt'												Path of the dev data
-​ test = "testchrid_BIO.txt"									Path of the test data
-​ loadmodel = 'data/model/test.model'					Path of the model to load
-​ output = 'data/test.output'									Path of the output
-​ lr = 0.015																	Learning rate
-​ maxlen = 300																Max length of each sequence
-​ dataset = 'ace'															Dataset name
-​ pretrain_char_emb = 'char.vec'							Pre-trained character embeddings
-​ pretrain_sense_emb = 'sense.vec'						Pre-trained sense embeddings
-​ pretrain_word_emb = 'word.vec'							Pre-trained word embeddings
+ status = 'train'								Status of the program
+ savemodel = 'data/model/test'							Path of the saved model
+ savedset = 'data/model/test.dset'						Path of the saved data settings
+ TRAIN = 'trainid_BIO.txt'							Path of the training data
+ dev = 'devid_BIO.txt'								Path of the dev data
+ test = "testchrid_BIO.txt"							Path of the test data
+ loadmodel = 'data/model/test.model'						Path of the model to load
+ output = 'data/test.output'							Path of the output
+ lr = 0.015									Learning rate
+ maxlen = 300									Max length of each sequence
+ dataset = 'ace'								Dataset name
+pretrain_char_emb = 'char.vec'							Pre-trained character embeddings
+pretrain_sense_emb = 'sense.vec'						Pre-trained sense embeddings
+pretrain_word_emb = 'word.vec'							Pre-trained word embeddings
 ```
 
 
