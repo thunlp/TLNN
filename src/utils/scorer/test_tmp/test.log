@@ -1,0 +1,7 @@
+[INFO] 2019-04-04 15:40:26,599 : Start tests.
+[INFO] 2019-04-04 15:40:26,599 : Running mention tests
+[INFO] 2019-04-04 15:40:26,599 : Running format error test cases.
+[INFO] 2019-04-04 15:40:26,600 : Running CoNLL tests.
+[INFO] 2019-04-04 15:40:26,600 : All test finished.
+Number of tests : 0, number of tests passed : 0, number of tests failed : 0
+
